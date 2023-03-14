@@ -1,0 +1,5 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE=$1
+
+python .husky/prepare-commit-msg.py "$COMMIT_MSG_FILE"

@@ -1,0 +1,62 @@
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/users/63efcefa544e864c1c74dd14/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"POST: /api/posts"}
+{"level":"debug","message":"POST: /api/posts"}
+{"level":"debug","message":"POST: /api/posts"}
+{"level":"debug","message":"POST: /api/posts"}
+{"level":"debug","message":"POST: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"error","message":"Api Error: Limit query should be number"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"debug","message":"GET: /api/posts"}
+{"level":"info","message":"MongoDB is connected"}
+{"level":"info","message":"Server is running on port: 3000"}

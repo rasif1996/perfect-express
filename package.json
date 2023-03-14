@@ -1,0 +1,84 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/server.ts",
+	"scripts": {
+		"clear": "rimraf build",
+		"build": "tsc",
+		"start": "cross-env NODE_ENV=production npm run clear && npm run build && node build/server.js",
+		"start:prod": "node build/server.js",
+		"start:dev": "ts-node --files src/server.ts",
+		"dev": "cross-env NODE_ENV=development nodemon --watch src --ext ts,js,json,tsx,jsx,html,css --exec npm run start:dev",
+		"format": "npx prettier --ignore-path .gitignore --write src",
+		"prepare": "npx husky install && npm run husky:commit",
+		"husky:commit": "npx husky add .husky/pre-commit \"npx lint-staged\"",
+		"husky:push": "npx husky add .husky/pre-push \"npm run test\"",
+		"lint": "npx eslint --ignore-path .gitignore --ext js,ts,jsx,tsx,html src",
+		"lint:fix": "npx eslint --ignore-path .gitignore --ext js,ts,jsx,tsx,html src --fix",
+		"lint:css": "npx stylelint --ignore-path .gitignore **/*.{css,scss,sass} --fix",
+		"stylelint": "stylelint **/*{.css,.scss}",
+		"stylelint:fix": "stylelint **/*{.css,.scss} --fix"
+	},
+	"lint-staged": {
+		"src/*.html": [
+			"npm run format",
+			"git add ."
+		],
+		"src/*.{js,jsx,ts,tsx,json,html}": [
+			"npm run lint:fix",
+			"git add ."
+		],
+		"src/*.{css,scss,less}": [
+			"npm run lint:css",
+			"git add ."
+		]
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/bcrypt": "5.0.0",
+		"@types/cookie-parser": "1.4.3",
+		"@types/express": "4.17.17",
+		"@types/jsonwebtoken": "9.0.1",
+		"@types/multer": "1.4.7",
+		"@types/uuid": "9.0.0",
+		"@typescript-eslint/eslint-plugin": "5.50.0",
+		"@typescript-eslint/parser": "5.50.0",
+		"cross-env": "7.0.3",
+		"eslint": "8.33.0",
+		"eslint-config-prettier": "8.6.0",
+		"eslint-plugin-html": "7.1.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"husky": "8.0.3",
+		"lint-staged": "13.1.0",
+		"nodemon": "2.0.20",
+		"prettier": "2.8.3",
+		"rimraf": "4.1.2",
+		"stylelint": "^14.16.1",
+		"stylelint-config-prettier": "^9.0.4",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-standard": "^29.0.0",
+		"stylelint-order": "^6.0.1",
+		"stylelint-prettier": "^2.0.0",
+		"stylelint-scss": "^4.3.0",
+		"ts-node": "10.9.1",
+		"tsconfig-paths": "4.1.2",
+		"typescript": "4.9.5"
+	},
+	"dependencies": {
+		"bcrypt": "5.1.0",
+		"body-parser": "1.20.1",
+		"cookie-parser": "1.4.6",
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"express-validator": "6.14.3",
+		"jsonwebtoken": "9.0.0",
+		"mongoose": "6.9.0",
+		"multer": "1.4.5-lts.1",
+		"nanoid": "^3.3.4",
+		"redis": "4.6.4",
+		"winston": "3.8.2"
+	}
+}

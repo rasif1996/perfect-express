@@ -1,0 +1,4 @@
+.husky
+.git
+node_modules
+build
